@@ -59,3 +59,11 @@ Este paquete contiene todos los archivos necesarios para desplegar tu curso "Wha
 ## Soporte
 
 Si tienes problemas con el despliegue, consulta la [documentación oficial de Vercel](https://vercel.com/docs).
+
+## Solución al error "invalid redirect_uri"
+
+Si al intentar iniciar sesión en Vercel recibes un error de `redirect_uri`, es porque el sistema de autenticación de Manus está configurado para el dominio original.
+
+**He aplicado un parche en los archivos JS** para que la autenticación siempre apunte al dominio original de Manus. Esto permitirá que la sesión se inicie correctamente incluso desde tu dominio de Vercel.
+
+Si el error persiste, asegúrate de que estás usando la última versión de los archivos que te he enviado.
