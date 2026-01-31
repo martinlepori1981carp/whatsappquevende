@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /api/*
+Sitemap: https://whatsapp-solo-hwjqhyje.manus.space/sitemap.xml
