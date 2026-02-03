@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por tu compra! - WhatsApp que vende solo</title>
+    <style>
+        :root {
+            --primary: #0070f3;
+            --primary-hover: #0051af;
+            --whatsapp: #25d366;
+            --whatsapp-hover: #128c7e;
+            --pdf: #ff4d4d;
+            --pdf-hover: #cc0000;
+            --bg: #f9fafb;
+            --text: #111827;
+            --text-muted: #4b5563;
+            --white: #ffffff;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--white);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            margin-bottom: 35px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .header p {
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+
+        .buttons-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 24px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-subtext {
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 4px;
+            opacity: 0.9;
+        }
+
+        /* Botón Curso */
+        .btn-course {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        .btn-course:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Botón PDF */
+        .btn-pdf {
+            background-color: var(--white);
+            color: var(--pdf);
+            border: 2px solid var(--pdf);
+        }
+        .btn-pdf:hover {
+            background-color: #fff5f5;
+        }
+
+        /* Botón WhatsApp */
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: var(--white);
+            margin-top: 10px;
+        }
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .btn {
+                font-size: 17px;
+                padding: 16px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>¡Gracias por tu compra! 🎉</h1>
+            <p>Ya tenés acceso inmediato al curso y al material descargable.</p>
+        </div>
+
+        <div class="buttons-group">
+            <!-- BOTÓN ACCESO AL CURSO -->
+            <a href="https://whatsappquevende.vercel.app/" class="btn btn-course">
+                👉 Acceder al curso ahora
+                <span class="btn-subtext">Acceso inmediato desde cualquier dispositivo</span>
+            </a>
+
+            <!-- BOTÓN DESCARGAR PDF -->
+            <a href="https://whatsappquevende.vercel.app/assets/Curso_WhatsApp_Que_Vende_Solo.pdf" download class="btn btn-pdf">
+                📥 Descargar PDF
+                <span class="btn-subtext">Material complementario del curso</span>
+            </a>
+
+            <!-- BOTÓN WHATSAPP -->
+            <!-- Para cambiar el número, modifica el 543415321151 a continuación -->
+            <a href="https://wa.me/543415321151?text=Hola%20Mart%C3%ADn%2C%20acabo%20de%20comprar%20el%20curso%20WhatsApp%20que%20vende.%20Necesito%20ayuda%20con%20el%20acceso." class="btn btn-whatsapp" target="_blank">
+                💬 Consultas por WhatsApp
+                <span class="btn-subtext">¿Tenés dudas? Escribinos por WhatsApp</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Guardá esta página para acceder cuando quieras.</p>
+        </div>
+    </div>
+
+</body>
+</html>
